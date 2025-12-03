@@ -269,12 +269,10 @@ input:focus, select:focus, textarea:focus {
 }
 
 
-responsive video {
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto;
-  border-radius: 12px;
-  border: 1px solid var(--divider);
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+.responsive-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 8px; 
 }
