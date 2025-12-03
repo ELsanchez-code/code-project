@@ -1,0 +1,72 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registration Confirmed - Thank You</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        
+        .thank-you-container {
+            min-height: 80vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .thank-you-container h2 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            animation: textPulse 4s ease-in-out infinite;
+        }
+        
+        .thank-you-container p {
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .thank-you-icon {
+            font-size: 4rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .thank-you-container h2 {
+                font-size: 2rem;
+            }
+            .thank-you-icon {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="thank-you-container">
+        <div class="thank-you-icon" aria-hidden="true">✔</div> 
+        <h2>Registration Successful!</h2>
+
+        <p>Thank you for registering your team for the MLBB Terowong Tournament. Your submission has been received.</p>
+        
+        <p>
+            **Important:** Please wait for the tournament organizer to verify your payment (Touch 'n Go QR) and contact you via the WhatsApp number you provided with further instructions.
+        </p>
+
+        <a class="btn btn-primary" href="index.html">Return to Home Page</a>
+    </main>
+
+</body>
+</html>

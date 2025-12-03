@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MLBB Tournament • Terowong, Semporna</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo-fire" aria-hidden="true">
+        <svg class="logo-svg" viewBox="0 0 64 64" width="48" height="48" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="Tournament logo">
+          <defs>
+            <linearGradient id="goldGrad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFF59D" />
+              <stop offset="40%" stop-color="#FFD700" />
+              <stop offset="100%" stop-color="#F5B400" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#goldGrad)" d="M32 2c-1 6-7 10-8 16-1 6 3 12 5 16 2-4 8-8 11-14 3-6 2-14-8-18z" />
+          <path fill="#FFEC99" d="M22 20c1-4 6-6 8-10 1 6-3 8-5 12-1 2-3 3-3-2z" opacity="0.85" />
+          <path fill="#E6A800" d="M34 28c4-2 6-6 6-10 0 7-6 11-9 14 0-1 0-2 3-4z" opacity="0.9" />
+        </svg>
+      </div>
+
+      <h1>MLBB • Terowong Tournament</h1>
+    </div>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+
+    <nav id="nav" class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#rules">Rules</a>
+      <a href="#details">Details</a>
+      <a href="#prizes">Prizes</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
+  <aside id="navPanel" class="nav-panel" aria-hidden="true" aria-label="Mobile menu">
+    <button id="navClose" class="nav-close" aria-label="Close menu">✕</button>
+    <nav class="nav-panel-links" role="navigation">
+      <a href="#home" class="panel-link">Home</a>
+      <a href="#rules" class="panel-link">Rules</a>
+      <a href="#details" class="panel-link">Details</a>
+      <a href="#prizes" class="panel-link">Prizes</a>
+      <a href="#register" class="panel-link">Register</a>
+      <a href="#contact" class="panel-link">Contact</a>
+    </nav>
+    <div class="nav-panel-footer">
+      <small>Organized by <strong>Team Jady SDPA</strong></small>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h2>Mobile Legends: Bang Bang •  Local eSports Tournament</h2>
+        <p class="date">24 February 2026 • Terowong, Semporna, Sabah</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#register">Register Team — RM20</a>
+          <a id="viewRulesBtn" class="btn btn-outline" href="#rules">View Rules</a>
+        </div>
+        <p class="small-note">Registration fee: <strong>RM20</strong> per team</p>
+      </div>
+      <div class="blue-fire" aria-hidden="true"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Video Teaser</h2>
+      <video control outo play mute loop width="1050" height="360" controls poster="thumbnail.jpg">
+      <source src="ict project.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </section>
+
+    <section id="rules" class="section">
+      <h2 class="section-title">Tournament Rules</h2>
+      <div class="card rules-card">
+        <ol>
+          <li>No cheating or use of third-party apps/hacks — immediate disqualification.</li>
+          <li>Late more than 5 minutes = automatic ban for that match (forfeiture).</li>
+          <li>Cannot change player after registration closes.</li>
+          <li>Each player must be Mythic rank or above to be eligible.</li>
+          <li>Teams must field 5 players per match. (5 active + 1 substitute allowed in registration.)</li>
+          <li>Each player must have a designated role (Tank, Fighter, Assassin, Mage, Marksman, Support).</li>
+          <li>Max teams: 50 capacity. Bracket/format will be announced based on registrations.</li>
+          <li>Referee decisions are final.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="details" class="section">
+      <h2 class="section-title">Event Details</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Location</h3>
+          <p>Terowong Street, Semporna, Sabah</p>
+        </div>
+        <div class="card">
+          <h3>Date</h3>
+          <p>24 February 2026</p>
+        </div>
+        <div class="card">
+          <h3>Players per team</h3>
+          <p>5 (with up to 1 substitute allowed when registering)</p>
+        </div>
+        <div class="card">
+          <h3>Max Teams</h3>
+          <p>50 teams</p>
+        </div>
+        <div class="card">
+          <h3>Match Format</h3>
+          <p>To be announced based on number of registrations</p>
+        </div>
+        <div class="card">
+          <h3>Registration Fee</h3>
+          <p>RM20 per team (pay via Touch 'n Go QR)</p>
+        </div>
+        <div class="card">
+          <h3>many ventors are available</h3>
+          <p>Food and drinks will be available at the venue</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="prizes" class="section prize-section">
+      <h2 class="section-title">Prize Pool • RM3,000</h2>
+      <div class="card prizes-card">
+        <ul>
+          <li><strong>Champion (1st)</strong> — RM1,500 + <em>Trophy</em> + <em>Certificate</em> + <em>medal</em></li>
+          <li><strong>Runner-up (2nd)</strong> — RM900 + <em>Certificate</em> + <em>medal</em></li>
+          <li><strong>3rd place (Top 3)</strong> — RM400 + <em>Certificate</em> + <em>medal</em></li>
+          <li><strong>MVP (Most Valuable Player)</strong> — RM200 + <em> Certificate</em> + <em>medal</em></li>
+        </ul>
+        <p class="note">Prize allocations and physical awards are final and cannot be changed after event announcement.
+        </p>
+      </div>
+    </section>
+
+    <section id="register" class="section">
+      <h2 class="section-title">Team Registration — RM20</h2>
+
+      <form action="https://formsubmit.co/jadigetar959@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <p class="payment-reminder" style="text-align: center; margin-bottom: 24px;">
+          Please pay **RM20** via **Touch 'n Go (TNG) QR** before completing registration.
+        (make sure to keep the payment receipt/screenshot for verification)
+        </p>
+
+        <div class="payment">
+            <div class="qr-wrap">
+                <img src="qr_converted.png" class="qr" alt="Touch 'n Go Payment QR Code">
+            </div>
+            <p class="small-note">Scan this QR code with your TNG app.</p>
+        </div>
+        
+        <div class="grid" style="margin-top: 25px;">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="Full Name" placeholder="Enter your real name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="ign">E-MAIL</label>
+            <input type="text" id="ign" name="E-MAIL" placeholder="e.g.abc@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="userid">Game ID (Server)</label>
+            <input type="text" id="userid" name="Game ID/Server" placeholder="12345678 (1234)" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">WhatsApp Number</label>
+            <input type="tel" id="contact" name="WhatsApp Number" placeholder="+60 12-345 6789" required>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 20px;">
+          <label for="team">Squad / Team Name</label>
+          <input type="text" id="team" name="Squad Name" placeholder="Enter Team Name">
+        </div>
+
+        <div style="text-align: center; margin-top: 32px;">
+          <p class="small-note" style="margin-bottom: 12px;">By registering, you agree to the tournament rules.</p>
+          <button type="submit" class="btn btn-primary">Submit Registration</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact & Info</h2>
+      <div class="card">
+        <p>Questions? Reach the event organizer JADY on WhatsApp: <a href="tel:+60143615960">+601-4361-5960</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 MLBB Terrowong • Organized by <strong>Team JadyYY SDPA</strong> • All rights reserved • Admin: JADY</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
